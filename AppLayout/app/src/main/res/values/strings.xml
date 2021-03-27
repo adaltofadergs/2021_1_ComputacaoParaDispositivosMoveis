@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">AppLayout</string>
+
+    <string name="textNome">Name: </string>
+    <string name="textNomeHint">Enter your name... </string>
+    <string name="textTelefone">Phone: </string>
+    <string name="textTelefoneHint">Enter your phone... </string>
+
+    <string name="textTurno">Shift: </string>
+    <string name="textManha">Morning</string>
+    <string name="textNoite">Night:</string>
+
+    <string name="textEstado">State:</string>
+
+    <string-array name="arrayEstados">
+        <item>Select...</item>
+        <item>PR</item>
+        <item>RS</item>
+        <item>SC</item>
+    </string-array>
+
 </resources>

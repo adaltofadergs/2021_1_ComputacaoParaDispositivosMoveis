@@ -7,13 +7,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
     <style name="styleTextos" parent="Theme.AppLayout" >
         <item name="android:textSize">25dp</item>
         <item name="android:textColor">#fff</item>
         <item name="android:background">#000</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
     <style name="styleFormulario" parent="Theme.AppLayout" >
