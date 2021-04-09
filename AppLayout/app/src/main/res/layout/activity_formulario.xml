@@ -71,6 +71,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+
+
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -111,6 +113,24 @@
                 />
         </LinearLayout>
 
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textAtividade"
+            style="@style/styleTextos"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textCaminhada"
+            style="@style/styleFormulario"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textCorrida"
+            style="@style/styleFormulario"/>
 
 
     </LinearLayout>

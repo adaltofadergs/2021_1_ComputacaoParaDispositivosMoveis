@@ -11,6 +11,11 @@
     <string name="textNoite">Night:</string>
 
     <string name="textEstado">State:</string>
+    <string name="textAtividade">Activity:</string>
+    <string name="textCaminhada">Walking</string>
+    <string name="textCorrida">Running</string>
+
+
 
     <string-array name="arrayEstados">
         <item>Select...</item>

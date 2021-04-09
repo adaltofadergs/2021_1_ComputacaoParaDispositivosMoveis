@@ -12,6 +12,11 @@
 
     <string name="textEstado">Región:</string>
 
+
+    <string name="textAtividade">Activid:</string>
+    <string name="textCaminhada">Caminata</string>
+    <string name="textCorrida">Correr</string>
+
     <string-array name="arrayEstados">
         <item>Selección...</item>
         <item>PR</item>

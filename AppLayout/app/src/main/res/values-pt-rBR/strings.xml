@@ -12,6 +12,11 @@
 
     <string name="textEstado">Estado:</string>
 
+
+    <string name="textAtividade">Atividade:</string>
+    <string name="textCaminhada">Caminhada</string>
+    <string name="textCorrida">Corrida</string>
+
     <string-array name="arrayEstados">
         <item>Selecione...</item>
         <item>PR</item>
