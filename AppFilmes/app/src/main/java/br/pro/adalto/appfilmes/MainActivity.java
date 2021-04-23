@@ -13,10 +13,17 @@ import android.view.View;
 
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import java.text.Normalizer;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+
+    private ListView lvFilmes;
+    private ArrayAdapter adapter;
+    private List<Filme> listaFilmes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +41,21 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, FormularioActivity.class);
                 intent.putExtra("acao", "novo");
                 startActivity( intent );
-
             }
         });
+
+
+        lvFilmes = findViewById(R.id.lvFilmes);
+
+        carregarFilmes();
     }
+
+    private void carregarFilmes(){
+        listaFilmes = FilmeDAO.getFilmes(this);
+        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaFilmes);
+        lvFilmes.setAdapter( adapter );
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
