@@ -20,4 +20,6 @@
         <item>2021</item>
     </string-array>
 
+    <string name="txtAtencao">Atenção</string>
+
 </resources>

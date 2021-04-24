@@ -40,28 +40,38 @@ public class FilmeDAO {
 
     public static List<Filme> getFilmes(Context context){
         List<Filme> lista = new ArrayList<>();
-
         Banco banco = new Banco(context);
         SQLiteDatabase db = banco.getReadableDatabase();
-
         Cursor cursor = db.rawQuery("SELECT id, nome, ano FROM filme ORDER BY nome", null );
-
         if( cursor.getCount() > 0 ){
-
             cursor.moveToFirst();
-
             do{
                 Filme filme = new Filme();
-
                 filme.id = cursor.getInt( 0);
                 filme.nome = cursor.getString(1);
                 filme.setAno( cursor.getInt(2) );
-
                 lista.add( filme );
-
             }while( cursor.moveToNext() );
         }
         return lista;
     }
+
+    public static Filme getFilmeById(Context context, int id){
+        Banco banco = new Banco(context);
+        SQLiteDatabase db = banco.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT id, nome, ano FROM filme WHERE id = " + id, null );
+        if( cursor.getCount() > 0 ){
+            cursor.moveToFirst();
+            Filme filme = new Filme();
+            filme.id = cursor.getInt( 0);
+            filme.nome = cursor.getString(1);
+            filme.setAno( cursor.getInt(2) );
+            return filme;
+        }else{
+            return null;
+        }
+    }
+
+
 
 }
