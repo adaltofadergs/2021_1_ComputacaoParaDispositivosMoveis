@@ -48,7 +48,7 @@ public class FormularioActivity extends AppCompatActivity {
             etNome.setText( filme.nome );
 
             String[] arrayAno = getResources().getStringArray(R.array.arrayAno);
-            for(int i =0; i < arrayAno.length ; i++){
+            for(int i = 1; i < arrayAno.length ; i++){
                 if( Integer.valueOf( arrayAno[i] ) == filme.getAno()){
                     spAno.setSelection( i );
                 }
