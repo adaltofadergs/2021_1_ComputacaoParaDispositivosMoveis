@@ -25,7 +25,8 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private ListView lvFilmes;
-    private ArrayAdapter adapter;
+//    private ArrayAdapter adapter;
+    private AdapterFilme adapter;
     private List<Filme> listaFilmes;
 
     @Override
@@ -113,7 +114,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void carregarFilmes(){
         listaFilmes = FilmeDAO.getFilmes(this);
-        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaFilmes);
+//        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listaFilmes);
+        adapter = new AdapterFilme(this, listaFilmes);
         lvFilmes.setAdapter( adapter );
     }
 
