@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppProdutos</string>
+
+    <string name="txtFechar">Fechar</string>
 </resources>
